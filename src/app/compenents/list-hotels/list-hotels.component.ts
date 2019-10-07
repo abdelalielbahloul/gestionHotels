@@ -9,13 +9,16 @@ import { Hotel } from 'src/app/models/hotel';
 })
 export class ListHotelsComponent implements OnInit {
 
+  like : false;
+
   showForm = false;
 
   myHotel : Hotel = {
     name : '',
     description : '',
     image : 'https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg',
-    rating : 1
+    rating : 1,
+    liked: false
   }
 
   hotels : Hotel[] = [];
@@ -40,6 +43,13 @@ export class ListHotelsComponent implements OnInit {
         })
   }
 
+  addLike(hotel){
+    this.hotelServices.liking(hotel.id, hotel.liked)
+        .subscribe(() => {
+          hotel.liked = !hotel.liked;
+        })
+  }
+
   // edit(hotel){
   //   this.editForm = true;
   //   this.myHotel = hotel;
@@ -58,7 +68,8 @@ export class ListHotelsComponent implements OnInit {
       name : '',
       description : '',
       image : 'https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg',
-      rating : 1
+      rating : 1,
+      liked : false
     }
   }
 

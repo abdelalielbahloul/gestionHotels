@@ -2,3 +2,19 @@
     font-size: 25px;
     color: #FEC107;
 }
+img{
+    width: 240px;
+    height: auto;
+}
+.fa-heart-o,.fa-heart{
+    font-size: 25px;
+    color: red;
+}
+
+#row-stars{
+    margin-left: 20%;
+}
+.badge{
+    cursor: pointer;
+    background-color: #fff;
+}

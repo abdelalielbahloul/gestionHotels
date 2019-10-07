@@ -16,7 +16,8 @@ export class AddHotelComponent implements OnInit {
     name : '',
     description : '',
     image : 'https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg',
-    rating : 1
+    rating : 1,
+    liked : false
   }
 
   constructor( private hotelServices: HotelService) { }
@@ -24,10 +25,18 @@ export class AddHotelComponent implements OnInit {
   ngOnInit() {
   }
 
+  getAll(){
+    this.hotelServices._findAll()
+        .subscribe(hotels => {
+          this.hotels = hotels;
+        })
+  }
+
   envoyer(){
     this.hotelServices._persist(this.newHotel)
         .subscribe((hotel) => {
           this.hotels = [hotel, ...this.hotels];
+          this.getAll();
           this.reset();
         })
   }
@@ -37,7 +46,8 @@ export class AddHotelComponent implements OnInit {
       name : '',
       description : '',
       image : 'https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg',
-      rating : 1
+      rating : 1,
+      liked : false
     }
   }
 

@@ -5,63 +5,96 @@
       "name": "Hotel Agdal",
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 3
+      "rating": 3,
+      "liked": true
     },
     {
       "id": 2,
       "name": "Hotel kesh",
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 4
+      "rating": 4,
+      "liked": false
     },
     {
       "id": 3,
       "name": "Rabat hotel",
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 5
+      "rating": 5,
+      "liked": false
     },
     {
       "id": 4,
       "name": "Hotel palace",
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 3
+      "rating": 3,
+      "liked": false
     },
     {
       "id": 5,
       "name": "Hotel ibis",
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 2
+      "rating": 2,
+      "liked": false
     },
     {
       "id": 6,
       "name": "Hotel ouarzazate",
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 3
+      "rating": 3,
+      "liked": false
     },
     {
       "id": 7,
       "name": "Hotel manadir",
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 4
+      "rating": 4,
+      "liked": false
     },
     {
       "id": 8,
       "name": "Hotel paris",
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 5
+      "rating": 5,
+      "liked": false
     },
     {
       "name": "Environnement",
       "description": "lorem epsum",
       "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
       "rating": "5",
-      "id": 10
+      "id": 10,
+      "liked": false
+    },
+    {
+      "name": "Enseignement",
+      "description": "kqsdjsssqskjdkqsjkdjkqsjdkjqskdqsd",
+      "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
+      "rating": "3",
+      "id": 11,
+      "liked": false
+    },
+    {
+      "name": "Religion",
+      "description": "sqdkqsjkjdkqsjdkjazuiouaziui44667R776",
+      "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
+      "rating": "2",
+      "id": 12,
+      "liked": false
+    },
+    {
+      "name": "Enterement",
+      "description": "sdjfdjsfjsdifhsdfihifyeuyfuzeyufyufu            qsdq",
+      "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
+      "rating": "4",
+      "liked": true,
+      "id": 13
     }
   ]
 }

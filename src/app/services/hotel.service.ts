@@ -23,6 +23,10 @@ export class HotelService {
     return this.http.delete(`${this.apiUrl}/${id}`);
   }
 
+  liking(id, liked){
+    return this.http.patch(`${this.apiUrl}/${id}`, { liked : !liked});
+  }
+
   // _update(hotel){
   //   return this.http.put(`${this.apiUrl}/${hotel.id}`, hotel);
   // }

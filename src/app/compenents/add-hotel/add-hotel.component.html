@@ -25,6 +25,8 @@
         <option>5</option>
       </select>
     </div>
+    <label for="like">You like it ?</label><br>
+    <input [(ngModel)]="newHotel.liked" type="checkbox" id="like"> Yes
     <div class="form-group">
       <label for="image">Picture (selected)</label>
       <input [(ngModel)]="newHotel.image" id="image" type="hidden" class="form-control" value="https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg" placeholder="">

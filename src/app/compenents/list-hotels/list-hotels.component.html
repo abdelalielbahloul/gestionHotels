@@ -1,0 +1,9 @@
+<div class="text-center" *ngFor="let item of hotels">
+    <h3 class="card-title">{{ item.name }}</h3>
+    <img [src]="item.image" alt="hotels-images">
+    <div class="card-body">
+        <p class="card-text">{{ item.description }}</p>
+        <p class="card-text"><small class="text-muted">{{ item.rating }}</small></p>
+    </div>
+</div>
+

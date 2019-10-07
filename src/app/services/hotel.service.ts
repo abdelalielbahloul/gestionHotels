@@ -9,6 +9,8 @@ export class HotelService {
 
   apiUrl = "http://localhost:3002/hotels";
 
+  apiUrl2 = "http://localhost:3002/wishlist";
+
   apiURLOrderByName= 'http://localhost:3002/hotels?_sort=name&_order=asc'; //getAll hotels order by name asc
   apiURLOrderByLike= 'http://localhost:3002/hotels?_sort=liked&_order=desc'; //getAll hotels order by name desc
   apiURLOrderByRating= 'http://localhost:3002/hotels?_sort=rating&_order=desc'; //getAll hotels order by name desc
@@ -40,6 +42,10 @@ export class HotelService {
 
   liking(id, liked){
     return this.http.patch(`${this.apiUrl}/${id}`, { liked : !liked});
+  }
+  
+  _addToWishlist(hotel){
+    return this.http.post<Hotel>(this.apiUrl2, hotel);
   }
 
   // _update(hotel){

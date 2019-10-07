@@ -12,6 +12,8 @@ export class AddHotelComponent implements OnInit {
 
   hotels : Hotel[] = [];
 
+  wishlistHotels : Hotel[] = [];
+
   newHotel : Hotel = {
     name : '',
     description : '',
@@ -39,6 +41,12 @@ export class AddHotelComponent implements OnInit {
           this.hotels = [hotel, ...this.hotels];
           // this.getAll();
           this.reset();
+          if(hotel.liked == true){
+            this.hotelServices._addToWishlist(this.newHotel)
+                .subscribe( (hotel) => {
+                  this.wishlistHotels = [hotel, ...this.wishlistHotels];
+                })
+          }
         })
   }
 

@@ -119,6 +119,24 @@
       "rating": 1,
       "liked": false,
       "id": 16
+    },
+    {
+      "name": "Loisir",
+      "description": "sqdfqsfqsfqs",
+      "image": "https://www.hotel-les-ecureuils.com/wp-content/uploads/2019/09/hotel-grand-bornand-22.jpg",
+      "rating": 1,
+      "liked": true,
+      "id": 17
+    }
+  ],
+  "wishlist": [
+    {
+      "name": "Hotel palace2",
+      "description": "this a hotel palace 2 in marzouga",
+      "image": "https://www.hotel-les-ecureuils.com/wp-content/uploads/2019/09/hotel-grand-bornand-22.jpg",
+      "rating": 1,
+      "liked": true,
+      "id": 1
     }
   ]
 }

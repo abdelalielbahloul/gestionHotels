@@ -1,0 +1,8 @@
+.fa-heart-o,.fa-heart{
+    font-size: 25px;
+}
+.btn .badge {
+    position: relative;
+    top: -13px;
+    left: -5px;
+}

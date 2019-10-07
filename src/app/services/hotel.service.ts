@@ -47,8 +47,11 @@ export class HotelService {
   _addToWishlist(hotel){
     return this.http.post<Hotel>(this.apiUrl2, hotel);
   }
+  _deleteFromWishlist(id){
+    return this.http.delete(`${this.apiUrl2}/${id}`);
+  }
 
-  // _update(hotel){
-  //   return this.http.put(`${this.apiUrl}/${hotel.id}`, hotel);
-  // }
+  _getWishlist(){
+    return this.http.get<Hotel[]>(this.apiUrl2);
+  }
 }

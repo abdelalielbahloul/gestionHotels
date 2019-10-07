@@ -9,6 +9,14 @@
     </ul>
 
 </div>
+<ul class="list-group" *ngFor="let wishlist of wishlistHotels">
+    
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        {{ wishlist.name }}
+        <span class="badge badge-secondary badge-pill">pill2</span>
+    </li>
+   
+</ul>
 <ul class="list-group" *ngFor="let item of hotels">
     <li class="list-group-item d-flex justify-content-between align-items-center">
 
@@ -76,7 +84,7 @@
                         </span>
             </div>
         </div>
-        <p>Description : {{ item.description }}</p>
+        <p><strong>Description :</strong> {{ item.description }}</p>
         <span class="badge badge-light badge-pill" (click)="addLike(item)">
             <i class="fa" [ngClass]="{
                 'fa-heart-o': !item.liked,

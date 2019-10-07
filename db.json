@@ -38,7 +38,7 @@
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
       "rating": 2,
-      "liked": true
+      "liked": false
     },
     {
       "id": 6,
@@ -93,7 +93,7 @@
       "description": "sdjfdjsfjsdifhsdfihifyeuyfuzeyufyufu            qsdq",
       "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
       "rating": "4",
-      "liked": true,
+      "liked": false,
       "id": 13
     },
     {
@@ -101,7 +101,7 @@
       "description": "this an hotel in ouarzazate",
       "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
       "rating": "4",
-      "liked": true,
+      "liked": false,
       "id": 14
     },
     {
@@ -109,7 +109,7 @@
       "description": "this a best hotel in ouarzazte ...",
       "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
       "rating": "4",
-      "liked": true,
+      "liked": false,
       "id": 15
     },
     {
@@ -125,18 +125,18 @@
       "description": "sqdfqsfqsfqs",
       "image": "https://www.hotel-les-ecureuils.com/wp-content/uploads/2019/09/hotel-grand-bornand-22.jpg",
       "rating": 1,
-      "liked": true,
+      "liked": false,
       "id": 17
     }
   ],
   "wishlist": [
     {
-      "name": "Hotel palace2",
-      "description": "this a hotel palace 2 in marzouga",
-      "image": "https://www.hotel-les-ecureuils.com/wp-content/uploads/2019/09/hotel-grand-bornand-22.jpg",
-      "rating": 1,
-      "liked": true,
-      "id": 1
+      "id": 1,
+      "name": "Hotel Agdal",
+      "description": "Un hôtel est un établissement commercial",
+      "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
+      "rating": 3,
+      "liked": true
     }
   ]
 }

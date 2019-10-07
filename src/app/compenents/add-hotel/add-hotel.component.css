@@ -6,3 +6,9 @@
     top: -13px;
     left: -5px;
 }
+
+#btn-light {
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}

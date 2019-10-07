@@ -11,6 +11,8 @@ export class ListHotelsComponent implements OnInit {
 
   like : false;
 
+  count = 0;
+
   showForm = false;
 
   myHotel : Hotel = {
@@ -22,11 +24,13 @@ export class ListHotelsComponent implements OnInit {
   }
 
   hotels : Hotel[] = [];
+  wishlistHotels : Hotel[] = [];
 
   constructor( private hotelServices : HotelService) { }
 
   ngOnInit() {
     this.getAll();
+    this.getWishlist();
   }
 
   getAll(){
@@ -69,6 +73,28 @@ export class ListHotelsComponent implements OnInit {
     this.hotelServices.liking(hotel.id, hotel.liked)
         .subscribe(() => {
           hotel.liked = !hotel.liked;
+          if(hotel.liked == true){
+            this.hotelServices._addToWishlist(hotel)
+                .subscribe(() => {
+                  this.wishlistHotels = [hotel, ...this.wishlistHotels];
+                  this.getWishlist();
+                })
+          }else{
+            this.hotelServices._deleteFromWishlist(hotel.id)
+                .subscribe(() => {
+                  this.wishlistHotels = this.wishlistHotels.filter(hotel => hotel.id != id);
+                  this.getWishlist();
+                })
+          }
+        })
+        
+  }
+
+  getWishlist(){
+    this.HotelService._getWishlist()
+        .subscribe(wishlistHotels => {
+          this.wishlistHotels = wishlistHotels;
+          
         })
   }
 

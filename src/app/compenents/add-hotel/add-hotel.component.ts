@@ -26,12 +26,21 @@ export class AddHotelComponent implements OnInit {
 
   ngOnInit() {
     this.getAll();
+    this.getWishlist();
   }
 
   getAll(){
     this.hotelServices._findAll()
         .subscribe(hotels => {
           this.hotels = hotels;
+        })
+  }
+
+   getWishlist(){
+    this.HotelService._getWishlist()
+        .subscribe(wishlistHotels => {
+          this.wishlistHotels = wishlistHotels;
+          
         })
   }
 

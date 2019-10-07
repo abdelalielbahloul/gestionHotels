@@ -5,6 +5,7 @@
 img{
     width: 240px;
     height: auto;
+    margin-top: 4%;
 }
 .fa-heart-o,.fa-heart{
     font-size: 25px;
@@ -17,4 +18,21 @@ img{
 .badge{
     cursor: pointer;
     background-color: #fff;
+}
+.hovereffect:hover > img {
+    -ms-transform:scale(1.2);
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
+    background-color:rgba(0,0,0,0.5);
+}
+.hovereffect img {
+    display:block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+}
+.list-group-horizontal > .list-group-item{
+    background-color: #ce111e;
+    color: #FFF;
+    cursor: pointer;
 }

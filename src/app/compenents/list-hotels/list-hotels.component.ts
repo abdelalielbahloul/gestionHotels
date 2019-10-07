@@ -36,6 +36,28 @@ export class ListHotelsComponent implements OnInit {
         })
   }
 
+  orderByName(){
+    this.hotelServices._ordringByName()
+    .subscribe(hotels => {
+      this.hotels = hotels;
+    })
+  }
+
+  orderByLike(){
+    this.hotelServices._ordringByLike()
+    .subscribe(hotels => {
+      this.hotels = hotels;
+    })
+  }
+
+  orderByRating(){
+    this.hotelServices._ordringByRating()
+    .subscribe(hotels => {
+      this.hotels = hotels;
+    })
+  }
+  
+
   deleteHotel(id){
     this.hotelServices._delete(id)
         .subscribe(() => {

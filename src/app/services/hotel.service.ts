@@ -9,10 +9,25 @@ export class HotelService {
 
   apiUrl = "http://localhost:3002/hotels";
 
+  apiURLOrderByName= 'http://localhost:3002/hotels?_sort=name&_order=asc'; //getAll hotels order by name asc
+  apiURLOrderByLike= 'http://localhost:3002/hotels?_sort=liked&_order=desc'; //getAll hotels order by name desc
+  apiURLOrderByRating= 'http://localhost:3002/hotels?_sort=rating&_order=desc'; //getAll hotels order by name desc
+
+
   constructor(private http : HttpClient) { }
 
   _findAll(){
     return this.http.get<Hotel[]>(this.apiUrl);
+  }
+
+  _ordringByName(){
+    return this.http.get<Hotel[]>(this.apiURLOrderByName);
+  }
+  _ordringByLike(){
+    return this.http.get<Hotel[]>(this.apiURLOrderByLike);
+  }
+  _ordringByRating(){
+    return this.http.get<Hotel[]>(this.apiURLOrderByRating);
   }
 
   _persist(hotel){

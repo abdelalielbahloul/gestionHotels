@@ -95,6 +95,30 @@
       "rating": "4",
       "liked": true,
       "id": 13
+    },
+    {
+      "name": "Hotel hanan",
+      "description": "this an hotel in ouarzazate",
+      "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
+      "rating": "4",
+      "liked": true,
+      "id": 14
+    },
+    {
+      "name": "Hotel hanan",
+      "description": "this a best hotel in ouarzazte ...",
+      "image": "https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg",
+      "rating": "4",
+      "liked": true,
+      "id": 15
+    },
+    {
+      "name": "Hotel palace2",
+      "description": "this a hotel palace 2 in marzouga",
+      "image": "https://www.hotel-les-ecureuils.com/wp-content/uploads/2019/09/hotel-grand-bornand-22.jpg",
+      "rating": 1,
+      "liked": false,
+      "id": 16
     }
   ]
 }

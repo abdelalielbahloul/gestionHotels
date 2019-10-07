@@ -14,4 +14,16 @@ export class HotelService {
   _findAll(){
     return this.http.get<Hotel[]>(this.apiUrl);
   }
+
+  _persist(hotel){
+    return this.http.post<Hotel>(this.apiUrl, hotel);
+  }
+
+  _delete(id){
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
+
+  // _update(hotel){
+  //   return this.http.put(`${this.apiUrl}/${hotel.id}`, hotel);
+  // }
 }

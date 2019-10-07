@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Hotel } from 'src/app/models/hotel';
+import { HotelService } from 'src/app/services/hotel.service';
+
 
 @Component({
   selector: 'app-add-hotel',
@@ -7,9 +10,37 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddHotelComponent implements OnInit {
 
-  constructor() { }
+  hotels : Hotel[] = [];
+
+  newHotel : Hotel = {
+    name : '',
+    description : '',
+    image : 'https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg',
+    rating : 1
+  }
+
+  constructor( private hotelServices: HotelService) { }
 
   ngOnInit() {
   }
+
+  envoyer(){
+    this.hotelServices._persist(this.newHotel)
+        .subscribe((hotel) => {
+          this.hotels = [hotel, ...this.hotels];
+          this.reset();
+        })
+  }
+
+  reset(){
+    this.newHotel = {
+      name : '',
+      description : '',
+      image : 'https://www.hotelgranadaarabeluj.com/wp-content/uploads/2017/05/hotel-con-encanto-en-granada-1.jpg',
+      rating : 1
+    }
+  }
+
+  
 
 }

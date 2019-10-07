@@ -38,7 +38,7 @@
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
       "rating": 2,
-      "liked": false
+      "liked": true
     },
     {
       "id": 6,

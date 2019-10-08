@@ -14,6 +14,10 @@ export class AddHotelComponent implements OnInit {
 
   wishlistHotels : Hotel[] = [];
 
+  toggleWishlist = false;
+
+  emptyWishlist = false;
+
   newHotel : Hotel = {
     name : '',
     description : '',
@@ -37,10 +41,12 @@ export class AddHotelComponent implements OnInit {
   }
 
    getWishlist(){
-    this.HotelService._getWishlist()
+    this.hotelServices._getWishlist()
         .subscribe(wishlistHotels => {
           this.wishlistHotels = wishlistHotels;
-          
+          if(this.wishlistHotels.length == 0){
+            this.emptyWishlist = true;
+          }
         })
   }
 

@@ -30,7 +30,7 @@ export class ListHotelsComponent implements OnInit {
 
   ngOnInit() {
     this.getAll();
-    this.getWishlist();
+    //this.getWishlist();
   }
 
   getAll(){
@@ -77,26 +77,26 @@ export class ListHotelsComponent implements OnInit {
             this.hotelServices._addToWishlist(hotel)
                 .subscribe(() => {
                   this.wishlistHotels = [hotel, ...this.wishlistHotels];
-                  this.getWishlist();
+                 // this.getWishlist();
                 })
           }else{
             this.hotelServices._deleteFromWishlist(hotel.id)
                 .subscribe(() => {
-                  this.wishlistHotels = this.wishlistHotels.filter(hotel => hotel.id != id);
-                  this.getWishlist();
+                  this.wishlistHotels = this.wishlistHotels.filter(hotel => hotel.id != hotel.id);
+                  //this.getWishlist();
                 })
           }
         })
         
   }
 
-  getWishlist(){
-    this.HotelService._getWishlist()
-        .subscribe(wishlistHotels => {
-          this.wishlistHotels = wishlistHotels;
+  // getWishlist(){
+  //   this.HotelService._getWishlist()
+  //       .subscribe(wishlistHotels => {
+  //         this.wishlistHotels = wishlistHotels;
           
-        })
-  }
+  //       })
+  // }
 
   // edit(hotel){
   //   this.editForm = true;

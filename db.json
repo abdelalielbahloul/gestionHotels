@@ -6,7 +6,7 @@
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
       "rating": 3,
-      "liked": true
+      "liked": false
     },
     {
       "id": 2,
@@ -119,24 +119,7 @@
       "rating": 1,
       "liked": false,
       "id": 16
-    },
-    {
-      "name": "Loisir",
-      "description": "sqdfqsfqsfqs",
-      "image": "https://www.hotel-les-ecureuils.com/wp-content/uploads/2019/09/hotel-grand-bornand-22.jpg",
-      "rating": 1,
-      "liked": false,
-      "id": 17
     }
   ],
-  "wishlist": [
-    {
-      "id": 1,
-      "name": "Hotel Agdal",
-      "description": "Un hôtel est un établissement commercial",
-      "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
-      "rating": 3,
-      "liked": true
-    }
-  ]
+  "wishlist": []
 }

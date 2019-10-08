@@ -54,4 +54,5 @@ export class HotelService {
   _getWishlist(){
     return this.http.get<Hotel[]>(this.apiUrl2);
   }
+
 }

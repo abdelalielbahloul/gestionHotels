@@ -6,7 +6,7 @@
       "description": "Un hôtel est un établissement commercial",
       "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
       "rating": 3,
-      "liked": false
+      "liked": true
     },
     {
       "id": 2,
@@ -121,5 +121,14 @@
       "id": 16
     }
   ],
-  "wishlist": []
+  "wishlist": [
+    {
+      "id": 1,
+      "name": "Hotel Agdal",
+      "description": "Un hôtel est un établissement commercial",
+      "image": "https://www.fergushotels.com/backoffice/images/247-pool-and-building-2.jpg",
+      "rating": 3,
+      "liked": true
+    }
+  ]
 }

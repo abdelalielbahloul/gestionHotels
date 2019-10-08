@@ -11,6 +11,7 @@ export class ListHotelsComponent implements OnInit {
 
   like : false;
 
+  searchText = '';
   count = 0;
 
   showForm = false;
@@ -25,6 +26,7 @@ export class ListHotelsComponent implements OnInit {
 
   hotels : Hotel[] = [];
   wishlistHotels : Hotel[] = [];
+  resultHotels : Hotel[] = [];
 
   constructor( private hotelServices : HotelService) { }
 
@@ -33,31 +35,37 @@ export class ListHotelsComponent implements OnInit {
     //this.getWishlist();
   }
 
+  search(){
+    this.resultHotels = this.hotels.filter((hotel) =>
+      hotel.name.toLocaleLowerCase().includes(this.searchText.toLocaleLowerCase())
+    )
+  }
+
   getAll(){
     this.hotelServices._findAll()
         .subscribe(hotels => {
-          this.hotels = hotels;
+          this.resultHotels = this.hotels = hotels;
         })
   }
 
   orderByName(){
     this.hotelServices._ordringByName()
     .subscribe(hotels => {
-      this.hotels = hotels;
+      this.resultHotels = this.hotels = hotels;
     })
   }
 
   orderByLike(){
     this.hotelServices._ordringByLike()
     .subscribe(hotels => {
-      this.hotels = hotels;
+      this.resultHotels = this.hotels = hotels;
     })
   }
 
   orderByRating(){
     this.hotelServices._ordringByRating()
     .subscribe(hotels => {
-      this.hotels = hotels;
+      this.resultHotels = this.hotels = hotels;
     })
   }
   

@@ -24,7 +24,13 @@
       
       <li class="list-group-item d-flex justify-content-between align-items-center">
           {{ wishlist.name }}
-          <span class="badge badge-secondary badge-pill">pill2</span>
+          <span class="badge badge-secondary badge-pill">
+              <i class="fa" [ngClass]="{
+                'fa-thumbs-down': !wishlist.liked,
+                'fa-thumbs-up': wishlist.liked
+            }" aria-hidden="true"></i>
+          </span>
+          <i class="fa fa-times"></i>
       </li>
     
     </ul>

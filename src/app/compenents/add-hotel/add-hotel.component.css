@@ -12,3 +12,8 @@
     background-color: #ffffff;
     border-color: #ffffff;
 }
+
+.fa-times{
+    color:red;
+    cursor: pointer;
+}

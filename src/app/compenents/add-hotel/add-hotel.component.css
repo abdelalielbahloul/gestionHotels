@@ -13,7 +13,7 @@
     border-color: #ffffff;
 }
 
-.fa-times{
+.list-group-item > .fa-times{
     color:red;
     cursor: pointer;
 }

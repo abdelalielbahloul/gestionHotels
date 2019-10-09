@@ -27,6 +27,7 @@ export class ListHotelsComponent implements OnInit {
   hotels : Hotel[] = [];
   wishlistHotels : Hotel[] = [];
   resultHotels : Hotel[] = [];
+  
 
   constructor( private hotelServices : HotelService) { }
 
